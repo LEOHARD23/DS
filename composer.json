@@ -1,6 +1,17 @@
 {
+    "name": "can/da",
+    "autoload": {
+        "psr-4": {
+            "Can\\Da\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Dialcc",
+            "email": "dialberto89@gmail.com"
+        }
+    ],
     "require": {
-        "firebase/php-jwt": "^6.11",
         "vlucas/phpdotenv": "^5.6"
     }
 }

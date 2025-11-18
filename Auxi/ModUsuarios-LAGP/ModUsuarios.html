@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modificar Usuarios</title>
+    <link rel="stylesheet" href="../../General-LAGP.css" />
+    <link rel="stylesheet" href="ModUsuarios.css" />
+    <link rel="stylesheet" href="../../mensajes.css" />
+    <style>
+</style>
+
+  </head>
+  <body>
+    <div id="AreaTrabajo">
+      <div id="Encabezado">
+        <img
+          src="../../img/TECNM.png"
+          alt="Logo de Tecnológico Nacional  de México"
+        />
+        <h1>Modificar Usuarios</h1>
+        <img
+          src="../../img/escudo.png"
+          alt="Logo de Instituto Tecnológico de Saltillo"
+        />
+      </div>
+      <hr />
+      <form id="Formulario" action="">
+        <div id="Rol">
+               <!--Combo Box-->
+            <span>Rol: </span>
+            <select id="ComboRol">
+              <option value="1" selected>1. Auxiliar</option>
+              <option value="2">2. Alumno</option>
+            </select>
+        </div>
+        <div id="Rol">
+        <!--Combo Box-->
+            <span>Estado: </span>
+            <select id="ComboEstado">
+              <option value="1" selected>1. Activo</option>
+              <option value="2">2. Inactivo</option>
+            </select>
+        </div>
+        <div id="Botones">
+            <button type="button" id="btnActualizar">Actualizar</button>
+        </div>
+        <div id="tabla">
+        <table id="tablaDinamica">
+          <thead>
+            <tr>
+              <th>Número control</th>
+              <th>Nombre</th>
+              <th>Paterno</th>
+              <th>Rol</th>
+              <th>Estado</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+    <footer>
+      <button type="button" onclick="salir()">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+          <path
+            fill="#7a0000"
+            d="M575.8 255.5c0 8.7-7.1 15.8-15.8 15.8H512v192c0 26.5-21.5 48-48 48H368c-8.8 0-16-7.2-16-16V368c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v127.3c0 8.8-7.2 16-16 16H112c-26.5 0-48-21.5-48-48V271.3H16c-8.8 0-16-7.1-16-15.8c0-4.6 2-9 5.5-12.1L266.3 5.5c6-5.3 15.1-5.3 21.2 0l260.8 238c3.5 3.1 5.5 7.5 5.5 12z"
+          />
+        </svg>
+      </button>
+    </footer>
+    <script src="../../js/mensajes.js"></script>
+    <script src="../../js/ModUsuarios-LAGP.js"></script>
+  </body>
+</html>
